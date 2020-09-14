@@ -7,6 +7,7 @@ export default class App extends Application {
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
+      // a 4 space indented comment to be trimmed to 2 spaces by ember-lint
 }
 
 loadInitializers(App, config.modulePrefix);
