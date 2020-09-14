@@ -8,6 +8,9 @@ export default class App extends Application {
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
       // a 4 space indented comment to be trimmed to 2 spaces by ember-lint
+  foo = ()=> {
+      'a 4 space indented string to be trimmed to 2 spaces by ember-lint'
+  };
 }
 
 loadInitializers(App, config.modulePrefix);
