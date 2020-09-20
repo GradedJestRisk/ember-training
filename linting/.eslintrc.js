@@ -20,7 +20,9 @@ module.exports = {
   env: {
     browser: true
   },
-  rules: {},
+  rules: {
+    indent: ["error", 2]
+  },
   overrides: [
     // node files
     {
@@ -46,7 +48,8 @@ module.exports = {
       rules: {
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
-        'node/no-unpublished-require': 'off'
+        'node/no-unpublished-require': 'off',
+        "node/prefer-global/console": ["error", "always"]
       }
     }
   ]
